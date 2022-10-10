@@ -1,0 +1,1 @@
+const d=document,hexNumberList=[0,1,2,3,4,5,6,7,8,9,"A","B","C","D","E","F"],$btn=d.getElementById("btn"),$color=d.querySelector(".color");$btn.addEventListener("click",()=>{let e="#";for(let t=0;t<6;t++)e+=hexNumberList[getRandomNumber()];d.body.style.backgroundColor=e,$color.textContent=e});const getRandomNumber=()=>Math.floor(Math.random()*hexNumberList.length);

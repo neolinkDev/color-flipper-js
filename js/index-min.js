@@ -1,0 +1,1 @@
+const d=document,colorList=["green","red","rgba(133,122,200)","yellow"],$btn=d.getElementById("btn"),$color=d.querySelector(".color");$btn.addEventListener("click",()=>{let o=getRandomNumber();d.body.style.backgroundColor=colorList[o],$color.textContent=colorList[o]});const getRandomNumber=()=>Math.floor(Math.random()*colorList.length);
